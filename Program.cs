@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
     class Program
     {
-        static EstacionamientoConcreto estacionamiento = new EstacionamientoConcreto(400, new SistemaDePago()); 
+        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(400, new SistemaDePago()); 
         static Registro registro = new Registro();
 
         static void Main(string[] args)

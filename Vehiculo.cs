@@ -1,6 +1,6 @@
 using System;
 
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
     public class Vehiculo
     {

@@ -12,3 +12,4 @@ C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\refint\2P-A1 Est
 C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.pdb
 C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.genruntimeconfig.cache
 C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\ref\2P-A1 Estacionamiento.dll
+C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.sourcelink.json

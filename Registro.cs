@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
     public class Registro
     {

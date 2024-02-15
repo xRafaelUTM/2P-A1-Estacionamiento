@@ -1,4 +1,4 @@
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
     public class Tarjeta
     {

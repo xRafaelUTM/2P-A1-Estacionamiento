@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
     public abstract class Estacionamiento
     {

@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
-    public class EstacionamientoConcreto : Estacionamiento
+    public class EstacionamientoFuncional : Estacionamiento
     {
         private SistemaDePago sistemaDePago;
 
-        public EstacionamientoConcreto(int capacidad, SistemaDePago sistemaDePago) : base(capacidad)
+        public EstacionamientoFuncional(int capacidad, SistemaDePago sistemaDePago) : base(capacidad)
         {
             this.sistemaDePago = sistemaDePago;
         }
@@ -32,10 +32,7 @@ namespace ParkingSystem
                 {
                     Console.WriteLine("---ERROR, INTENTE DE NUEVO.---");
                 }
-                
             }
-            
-            
             
             sistemaDePago.EmitirRecibo(vehiculo, montoPagado, horaSalida);
 

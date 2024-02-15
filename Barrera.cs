@@ -1,22 +1,21 @@
 using System;
 using System.Threading;
 
-namespace ParkingSystem
+namespace EstacionamientoCity32
 {
     public class Barrera
     {
-        private bool estado; // false: bajada, true: levantada
+        private bool estado;
 
         public Barrera()
         {
-            estado = false; // Barrera comienza bajada
+            estado = false;
         }
 
         public void Levantar()
         {
             estado = true;
             Console.WriteLine("Se abrió la barrera...[ESPERE]");
-            // Simula el tiempo que la barrera se mantiene abierta
             Thread.Sleep(5000);
         }
 
