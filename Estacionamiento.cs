@@ -10,7 +10,6 @@ namespace EstacionamientoCity32
         protected List<Vehiculo> vehiculos;
         protected Barrera barrera;
         protected Semaforo semaforo;
-
         public Estacionamiento(int capacidad)
         {
             this.capacidad = capacidad;
@@ -18,7 +17,6 @@ namespace EstacionamientoCity32
             barrera = new Barrera();
             semaforo = new Semaforo();
         }
-
         public virtual void IngresarVehiculo(Vehiculo vehiculo)
         {
             semaforo.CambiarColor("verde");
@@ -28,7 +26,6 @@ namespace EstacionamientoCity32
             Console.WriteLine($"\n Presione enter...");
             Console.ReadKey();
         }
-
         public virtual Vehiculo SalirVehiculo(string? codigo)
         {
             var vehiculo = vehiculos.FirstOrDefault(v => v.Codigo == codigo);
@@ -39,9 +36,6 @@ namespace EstacionamientoCity32
 
             return vehiculo;
         }
-
         public abstract void Facturar(Vehiculo vehiculo, DateTime horaSalida);
-
-        
     }
 }

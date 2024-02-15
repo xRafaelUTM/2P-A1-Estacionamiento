@@ -4,12 +4,9 @@ namespace EstacionamientoCity32
 {
     public class SistemaDePago
     {
-        public double CalcularCosto(DateTime horaEntrada, DateTime horaSalida)
+        public static double CalcularCosto(DateTime horaEntrada, DateTime horaSalida)
         {
-            
             TimeSpan tiempoEstacionado = horaSalida - horaEntrada;
-            
-            
             double costo = 20.00; 
             if (tiempoEstacionado.TotalMinutes > 60)
             {
@@ -19,10 +16,8 @@ namespace EstacionamientoCity32
             }
             return costo;
         }
-
-        public void EmitirRecibo(Vehiculo vehiculo, double cantidadPagada, DateTime horaSalida)
+        public static void EmitirRecibo(Vehiculo vehiculo, double cantidadPagada, DateTime horaSalida)
         {
-            
             double costo = CalcularCosto(vehiculo.HoraEntrada, horaSalida);
 
             Console.Clear();

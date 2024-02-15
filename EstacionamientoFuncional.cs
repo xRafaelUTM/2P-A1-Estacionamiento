@@ -7,15 +7,13 @@ namespace EstacionamientoCity32
     public class EstacionamientoFuncional : Estacionamiento
     {
         private SistemaDePago sistemaDePago;
-
         public EstacionamientoFuncional(int capacidad, SistemaDePago sistemaDePago) : base(capacidad)
         {
             this.sistemaDePago = sistemaDePago;
         }
-
         public override void Facturar(Vehiculo vehiculo, DateTime horaSalida)
         {
-            double costo = sistemaDePago.CalcularCosto(vehiculo.HoraEntrada, horaSalida);
+            double costo = SistemaDePago.CalcularCosto(vehiculo.HoraEntrada, horaSalida);
 
             Console.WriteLine($"El costo total es: ${costo}");
             double montoPagado;
@@ -33,22 +31,19 @@ namespace EstacionamientoCity32
                     Console.WriteLine("---ERROR, INTENTE DE NUEVO.---");
                 }
             }
-            
-            sistemaDePago.EmitirRecibo(vehiculo, montoPagado, horaSalida);
+
+            SistemaDePago.EmitirRecibo(vehiculo, montoPagado, horaSalida);
 
             vehiculos.Remove(vehiculo);
         }
-
         public Vehiculo BuscarVehiculoPorCodigo(string? codigo)
         {
             return vehiculos.FirstOrDefault(v => v.Codigo == codigo);
         }
-
         public int EspaciosDisponibles()
         {
             return capacidad - vehiculos.Count;
         }
-
         public IEnumerable<Vehiculo> Vehiculos => vehiculos;
     }
 }

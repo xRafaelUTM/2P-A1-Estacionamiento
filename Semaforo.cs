@@ -3,18 +3,11 @@ namespace EstacionamientoCity32
     public class Semaforo
     {
         private string? color;
-
         public Semaforo()
         {
             color = "verde";
         }
-
-        public string? Color
-        {
-            get => color;
-            private set => color = value;
-        }
-
+        public string? Color { get => color; private set => color = value; }
         public void CambiarColor(string? nuevoColor)
         {
             color = nuevoColor;

@@ -4,7 +4,7 @@ namespace EstacionamientoCity32
 {
     class Program
     {
-        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(400, new SistemaDePago()); 
+        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(2, new SistemaDePago()); 
         static Registro registro = new Registro();
 
         static void Main(string[] args)

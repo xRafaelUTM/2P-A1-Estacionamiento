@@ -7,21 +7,17 @@ namespace EstacionamientoCity32
     {
         private List<Vehiculo> vehiculosRegistrados;
         private List<string?> facturasEmitidas;
-
         public Registro()
         {
             vehiculosRegistrados = new List<Vehiculo>();
             facturasEmitidas = new List<string?>();
         }
-
         public void RegistrarEntrada(Vehiculo vehiculo)
         {
             vehiculosRegistrados.Add(vehiculo);
         }
-
         public string? FacturarSalida(Vehiculo vehiculo, DateTime horaSalida)
         {
-            
             TimeSpan tiempoEstacionado = horaSalida - vehiculo.HoraEntrada;
             string? resultadoFormateado = String.Format("{0} horas, {1} minutos", 
                                            tiempoEstacionado.Hours, 
@@ -36,7 +32,6 @@ namespace EstacionamientoCity32
             vehiculosRegistrados.Remove(vehiculo);
             return factura;
         }
-
         private double CalcularCosto(TimeSpan tiempoEstacionado)
         {
             double costo = 20.00; // Costo base por la primera hora
@@ -48,7 +43,6 @@ namespace EstacionamientoCity32
             }
             return costo;
         }
-
         public IEnumerable<string?> Facturas => facturasEmitidas;
     }
 }

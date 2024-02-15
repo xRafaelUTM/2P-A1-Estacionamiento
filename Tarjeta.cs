@@ -1,18 +1,8 @@
 namespace EstacionamientoCity32
 {
-    public class Tarjeta
+    public class Tarjeta(string? codigo)
     {
-        private string? codigo;
-
-        public Tarjeta(string? codigo)
-        {
-            this.codigo = codigo;
-        }
-
-        public string? Codigo
-        {
-            get => codigo;
-            set => codigo = value;
-        }
+        private string? codigo = codigo;
+        public string? Codigo { get => codigo; set => codigo = value; }
     }
 }
