@@ -12,6 +12,7 @@ namespace EstacionamientoCity32
         {
             // Establecer la codificación predeterminada a UTF-8
             Console.OutputEncoding = Encoding.UTF8;
+            Console.WriteLine("H");
             
             bool ejecutando = true;
             while (ejecutando)
