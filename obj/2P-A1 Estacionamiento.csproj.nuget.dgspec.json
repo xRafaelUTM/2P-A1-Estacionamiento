@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\solis\\Downloads\\2P-A1 Estacionamiento\\2P-A1 Estacionamiento.csproj": {}
+    "/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/2P-A1 Estacionamiento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\solis\\Downloads\\2P-A1 Estacionamiento\\2P-A1 Estacionamiento.csproj": {
+    "/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/2P-A1 Estacionamiento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\solis\\Downloads\\2P-A1 Estacionamiento\\2P-A1 Estacionamiento.csproj",
+        "projectUniqueName": "/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/2P-A1 Estacionamiento.csproj",
         "projectName": "2P-A1 Estacionamiento",
-        "projectPath": "C:\\Users\\solis\\Downloads\\2P-A1 Estacionamiento\\2P-A1 Estacionamiento.csproj",
-        "packagesPath": "C:\\Users\\solis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\solis\\Downloads\\2P-A1 Estacionamiento\\obj\\",
+        "projectPath": "/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/2P-A1 Estacionamiento.csproj",
+        "packagesPath": "/home/rafaelxfedora/.nuget/packages/",
+        "outputPath": "/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\solis\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/rafaelxfedora/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -53,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

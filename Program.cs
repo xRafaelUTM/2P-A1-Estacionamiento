@@ -1,14 +1,17 @@
 ﻿using System;
+using System.Text;
 
 namespace EstacionamientoCity32
 {
     class Program
     {
-        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(2, new SistemaDePago()); 
+        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(5, new SistemaDePago()); 
         static Registro registro = new Registro();
 
         static void Main(string[] args)
         {
+            // Establecer la codificación predeterminada a UTF-8
+            Console.OutputEncoding = Encoding.UTF8;
             
             bool ejecutando = true;
             while (ejecutando)

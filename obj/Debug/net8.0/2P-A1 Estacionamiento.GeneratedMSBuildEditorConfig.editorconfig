@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = _2P_A1_Estacionamiento
-build_property.ProjectDir = C:\Users\solis\Downloads\2P-A1 Estacionamiento\
+build_property.ProjectDir = /home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
