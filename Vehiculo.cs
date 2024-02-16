@@ -12,7 +12,7 @@ namespace EstacionamientoCity32
             // Genera un código aleatorio de 4 dígitos.
             Random random = new Random();
             this.codigo = random.Next(1000, 9000).ToString();
-            Console.WriteLine($"Su codigo es: {codigo}");
+            C.Cs(ConsoleColor.Yellow); Console.Write($"📌 Su codigo es: "); C.Cs(ConsoleColor.White); Console.WriteLine($"{codigo}");
             this.matricula = matricula;
             this.horaEntrada = DateTime.Now;
         }

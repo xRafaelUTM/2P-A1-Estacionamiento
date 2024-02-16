@@ -19,11 +19,11 @@ namespace EstacionamientoCity32
         }
         public virtual void IngresarVehiculo(Vehiculo vehiculo)
         {
-            semaforo.CambiarColor("verde");
+            //semaforo.CambiarColor("verde");
             vehiculos.Add(vehiculo);
             barrera.Levantar();
             barrera.Bajar();
-            Console.WriteLine($"\n Presione enter...");
+            C.Cs(ConsoleColor.Yellow); Console.WriteLine($"\n Presione enter...");
             Console.ReadKey();
         }
         public virtual Vehiculo SalirVehiculo(string? codigo)
@@ -32,7 +32,7 @@ namespace EstacionamientoCity32
 
             vehiculos.Remove(vehiculo);
             barrera.Levantar();
-            Console.WriteLine("Se cerró la barrera, el vehículo ha salido exitosamente...");
+            C.Cs(ConsoleColor.Yellow); Console.WriteLine("🔚 Se cerró la barrera, el vehículo ha salido exitosamente...");
 
             return vehiculo;
         }

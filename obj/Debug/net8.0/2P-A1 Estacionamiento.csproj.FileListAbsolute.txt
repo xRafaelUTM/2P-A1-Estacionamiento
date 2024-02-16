@@ -1,15 +1,30 @@
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.AssemblyInfoInputs.cache
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.AssemblyInfo.cs
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.csproj.CoreCompileInputs.cache
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\bin\Debug\net8.0\2P-A1 Estacionamiento.exe
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\bin\Debug\net8.0\2P-A1 Estacionamiento.deps.json
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\bin\Debug\net8.0\2P-A1 Estacionamiento.runtimeconfig.json
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\bin\Debug\net8.0\2P-A1 Estacionamiento.dll
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\bin\Debug\net8.0\2P-A1 Estacionamiento.pdb
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.dll
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\refint\2P-A1 Estacionamiento.dll
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.pdb
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.genruntimeconfig.cache
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\ref\2P-A1 Estacionamiento.dll
-C:\Users\solis\Downloads\2P-A1 Estacionamiento\obj\Debug\net8.0\2P-A1 Estacionamiento.sourcelink.json
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.AssemblyInfoInputs.cache
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.AssemblyInfo.cs
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.csproj.CoreCompileInputs.cache
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.exe
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.deps.json
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.runtimeconfig.json
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.dll
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.pdb
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.dll
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/refint/2P-A1 Estacionamiento.dll
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.pdb
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.genruntimeconfig.cache
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/ref/2P-A1 Estacionamiento.dll
+C:/Users/solis/Downloads/2P-A1 Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.sourcelink.json
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.deps.json
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.runtimeconfig.json
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.dll
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/bin/Debug/net8.0/2P-A1 Estacionamiento.pdb
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.GeneratedMSBuildEditorConfig.editorconfig
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.AssemblyInfoInputs.cache
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.AssemblyInfo.cs
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.csproj.CoreCompileInputs.cache
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.sourcelink.json
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.dll
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/refint/2P-A1 Estacionamiento.dll
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.pdb
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/2P-A1 Estacionamiento.genruntimeconfig.cache
+/home/rafaelxfedora/Descargas/2P-A1-Estacionamiento/obj/Debug/net8.0/ref/2P-A1 Estacionamiento.dll

@@ -11,7 +11,7 @@ namespace EstacionamientoCity32
         public void CambiarColor(string? nuevoColor)
         {
             color = nuevoColor;
-            Console.WriteLine($"Semáforo en {color}");
+            C.Cs(ConsoleColor.Yellow); Console.Write("🟢 Semáforo en "); C.Cs(ConsoleColor.Green); Console.WriteLine($"{color}.");
         }
     }
 }

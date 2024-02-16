@@ -1,33 +1,36 @@
 ﻿using System;
 using System.Text;
+using System.Media;
+using System.Drawing;
 
 namespace EstacionamientoCity32
 {
     class Program
     {
-        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(5, new SistemaDePago()); 
+        static EstacionamientoFuncional estacionamiento = new EstacionamientoFuncional(2, new SistemaDePago()); 
         static Registro registro = new Registro();
 
         static void Main(string[] args)
         {
             // Establecer la codificación predeterminada a UTF-8
             Console.OutputEncoding = Encoding.UTF8;
-            Console.WriteLine("H");
             
             bool ejecutando = true;
             while (ejecutando)
             {
                 Console.Clear();
-                Console.WriteLine("\n\"Estacionamiento City 32\"");
-                Console.WriteLine("1. Entrada de vehículo.");
-                Console.WriteLine("2. Salida de vehículo.");
-                Console.WriteLine("3. Facturas.");
-                Console.WriteLine("4. Carros en el estacionamiento");
-                Console.WriteLine("5. Salir.");
-                Console.Write("Seleccione una opción: ");
 
-                string? opcion = Console.ReadLine();
+                
+                C.Cs(ConsoleColor.Yellow); Console.WriteLine("🚗 Estacionamiento \"City 32\" 🚙");
+                C.Cs(ConsoleColor.Yellow); Console.Write("🚥 1. "); C.Cs(ConsoleColor.White); Console.WriteLine("Entrada de vehículo.");
+                C.Cs(ConsoleColor.Yellow); Console.Write("🔚 2. "); C.Cs(ConsoleColor.White); Console.WriteLine("Salida de vehículo.");
+                C.Cs(ConsoleColor.Yellow); Console.Write("💸 3. "); C.Cs(ConsoleColor.White); Console.WriteLine("Facturas.");
+                C.Cs(ConsoleColor.Yellow); Console.Write("🔎 4. "); C.Cs(ConsoleColor.White); Console.WriteLine("Carros en el estacionamiento");
+                C.Cs(ConsoleColor.Yellow); Console.Write("❌ 5. "); C.Cs(ConsoleColor.Red); Console.WriteLine("Salir.");
+                C.Cs(ConsoleColor.Yellow); Console.Write("📍 Seleccione una opción: ");
 
+                C.Cs(ConsoleColor.Cyan); string? opcion = Console.ReadLine();
+                
                 switch (opcion)
                 {
                     case "1":
@@ -57,17 +60,31 @@ namespace EstacionamientoCity32
             if (estacionamiento.EspaciosDisponibles() > 0)
             {
                 Console.Clear();
-                Console.WriteLine("Semáforo en verde. Ingrese la matrícula del vehículo:");
-                string? matricula = Console.ReadLine();
+                C.Cs(ConsoleColor.Yellow); Console.Write("🟢 Semáforo en "); C.Cs(ConsoleColor.Green); Console.WriteLine("verde.");
+                C.Cs(ConsoleColor.Yellow); Console.Write("🪪  Ingrese la matrícula del vehículo: \n--> ");
+                string? matricula;     
+                do
+                {
+                    C.Cs(ConsoleColor.Cyan); matricula = Console.ReadLine();
+                    if(string.IsNullOrWhiteSpace(matricula))
+                    {
+                        C.Cs(ConsoleColor.Red); Console.Write("❌ El valor ingresado no es válido. Intente nuevamente."); C.Cs(ConsoleColor.Yellow); Console.Write("\n--> ");
+                    }
+                    else {break;}
+
+                } while (true);
+                
+                
                 Vehiculo nuevoVehiculo = new Vehiculo(matricula);
                 estacionamiento.IngresarVehiculo(nuevoVehiculo);
                 registro.RegistrarEntrada(nuevoVehiculo);
-                Console.WriteLine($"Se ha asignado la tarjeta con código {nuevoVehiculo.Codigo} al vehículo con matrícula {matricula}.");
+                //C.Cs(ConsoleColor.Yellow); Console.Write($"✅ Se ha asignado la tarjeta con código "); C.Cs(ConsoleColor.White); Console.WriteLine($"{nuevoVehiculo.Codigo}"); C.Cs(ConsoleColor.Yellow); Console.WriteLine($"al vehículo con matrícula ");  C.Cs(ConsoleColor.White); Console.WriteLine($"{matricula}.");
             }
             else
             {
                 Console.Clear();
-                Console.WriteLine("Semáforo en rojo. No hay espacios disponibles.");
+                C.Cs(ConsoleColor.Yellow); Console.Write("🔴 Semáforo en "); C.Cs(ConsoleColor.Red); Console.WriteLine("rojo.");
+                C.Cs(ConsoleColor.Yellow); Console.WriteLine("❌ No hay espacios disponibles.");
                 Console.WriteLine($"\n Presione enter...");
                 Console.ReadKey();
             }
@@ -77,23 +94,25 @@ namespace EstacionamientoCity32
         static void SalidaVehiculo()
         {
             Console.Clear();
-            Console.WriteLine("Ingrese el código de la tarjeta del vehículo:");
-            string? codigo = Console.ReadLine();
+            C.Cs(ConsoleColor.Yellow); Console.Write("🪪  Ingrese el código de la tarjeta del vehículo: \n--> ");
+            C.Cs(ConsoleColor.Cyan); string? codigo = Console.ReadLine();
             
 
             Vehiculo vehiculo = estacionamiento.BuscarVehiculoPorCodigo(codigo);
             if (vehiculo != null)
-            {
-                            
-                Console.WriteLine("Ingrese la hora de salida [FORMATO: [HH:MM] FORMATO: [24H]].");
-                string? horaSalidaInput = Console.ReadLine();
+            {                           
+                C.Cs(ConsoleColor.Yellow); Console.Write("⏰ Ingrese la hora de salida "); C.Cs(ConsoleColor.Red); Console.WriteLine("[FORMATO: [HH:MM] FORMATO: [24H]].");
+                C.Cs(ConsoleColor.Yellow); Console.Write("--> ");
+                C.Cs(ConsoleColor.Cyan); string? horaSalidaInput = Console.ReadLine();
                 DateTime horaSalida;
                 DateTime fechaActual = DateTime.Now;
 
                 while (!DateTime.TryParseExact(horaSalidaInput, "HH:mm", null, System.Globalization.DateTimeStyles.None, out horaSalida))
                 {
-                    Console.WriteLine("Formato inválido. Por favor, ingrese la hora en FORMATO: [HH:MM] FORMATO: [24H].");
-                    horaSalidaInput = Console.ReadLine();
+                    C.Cs(ConsoleColor.Red); Console.WriteLine("Formato inválido.");
+                    C.Cs(ConsoleColor.Yellow); Console.Write("⏰ Ingrese la hora de salida "); C.Cs(ConsoleColor.Red); Console.WriteLine("[FORMATO: [HH:MM] FORMATO: [24H]].");
+                    C.Cs(ConsoleColor.Yellow); Console.Write("--> ");
+                    C.Cs(ConsoleColor.Cyan); horaSalidaInput = Console.ReadLine();
                 }
 
                 
@@ -104,16 +123,14 @@ namespace EstacionamientoCity32
 
                 estacionamiento.Facturar(vehiculo, horaSalida);
                 
-
-
                 estacionamiento.SalirVehiculo(codigo);
-                Console.WriteLine($"\n Presione enter...");
+                C.Cs(ConsoleColor.Yellow); Console.WriteLine($"\n Presione enter...");
                 Console.ReadKey();
             }
             else
             {
-                Console.WriteLine("Código no encontrado.");
-                Console.WriteLine($"\n Presione enter...");
+                C.Cs(ConsoleColor.Red); Console.WriteLine("❌ Código no encontrado.");
+                C.Cs(ConsoleColor.Yellow); Console.WriteLine($"\n Presione enter...");
                 Console.ReadKey();
             }
         }
@@ -124,9 +141,10 @@ namespace EstacionamientoCity32
             Console.Clear();
             foreach (var factura in registro.Facturas)
             {
-                Console.WriteLine(factura);
+                C.Cs(ConsoleColor.White); Console.WriteLine("---📋📋📋📋📋---");
+                C.Cs(ConsoleColor.Yellow); Console.WriteLine(factura);
             }
-            Console.WriteLine($"\n Presione enter...");
+            C.Cs(ConsoleColor.Yellow); Console.WriteLine($"\n Presione enter...");
             Console.ReadKey();
         }
 
@@ -136,9 +154,9 @@ namespace EstacionamientoCity32
             Console.Clear();
             foreach (var vehiculo in estacionamiento.Vehiculos)
             {
-                Console.WriteLine($"Código: {vehiculo.Codigo}, Matrícula: {vehiculo.Matricula}, Hora de Entrada: {vehiculo.HoraEntrada}");
+                C.Cs(ConsoleColor.Yellow); Console.WriteLine($"✅ Código: {vehiculo.Codigo}, Matrícula: {vehiculo.Matricula}, Hora de Entrada: {vehiculo.HoraEntrada}");
             }
-            Console.WriteLine($"\n Presione enter...");
+            C.Cs(ConsoleColor.Yellow); Console.WriteLine($"\n Presione enter...");
             Console.ReadKey();
         }
 
